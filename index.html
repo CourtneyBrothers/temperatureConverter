@@ -10,16 +10,17 @@
   
         <div>
         <label for "tempConverter">Please enter the temperature to convert</label>
-        <input type="text" id="converter" name="name" placeholder="Celsius or Farenheit">
+        <input type="number" id="converter" placeholder="Celsius or Farenheit">
+        <input type="submit" id="convertButton" value="convert!">
         </div>
-        <div>
-            <button>Submit</button>
-        </div>
+        <div></div>
+       
         <p>Is this temperature in Celsius or Farenheit?</p>
+
         <div>
-          <input type="radio" id="Farenheit"
+          <input type="radio" id="Fahrenheit"
            name="degrees" value="degree">
-          <label for="Farenheit">Farenheit</label>
+          <label for="Fahrenheit">Fahrenheit</label>
       
           <input type="radio" id="Celsius"
            name="degrees" value="degree">
@@ -27,9 +28,8 @@
       
           
         </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
+        
+        <script src="main.js"></script>
     
 </body>
 </html>
