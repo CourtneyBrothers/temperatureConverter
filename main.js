@@ -3,14 +3,14 @@ let celsiusBase = 32;
 
 var valueToConvert = document.getElementById('converter');
 var convertButton = document.getElementById("convertButton");
-console.log(convertButton);
+
 
 function toCelsius (valueToConvert) {
-    console.log('im here');
+    
     var inputToConvert = document.getElementById('converter').value;
-    console.log('im here now');
+    
     let convertedToCelsius = (inputToConvert - celsiusBase) * (5/9);
-    console.log(convertedToCelsius);
+    
     var conversionButton = document.getElementById('btn');
     conversionButton.innerHTML = convertedToCelsius;
     if (convertedToCelsius > 32){
@@ -23,13 +23,13 @@ function toCelsius (valueToConvert) {
 
     }
     
-    console.log(valueToConvert);
+   
 
 function toFahrenheit (valueToConvert) {
     var inputToConvert = document.getElementById('converter').value;
-    console.log('im here now');
+    
     let convertedToFarenheit = (inputToConvert * (9/5) + (3/2));
-    console.log(convertedToFarenheit);
+    
     var conversionButton = document.getElementById('btn');
     conversionButton.innerHTML = convertedToFarenheit;
     
@@ -60,7 +60,7 @@ function toFahrenheit (valueToConvert) {
         }
         //let valueHolder = document.createElementById('div');
         //valueHolder.appendChild(convertedValue);
-      console.log("event", clickEvent);
+      
     }
     
     // Assign a function to be executed when the button is clicked
